@@ -26,7 +26,7 @@ class Space:
                 raise ValueError(f"Ошибка в конструкторе класса '{self.__class__}': "
                                  f"каждый из размеров пространства должен быть > 0!")
         # Инициализация размеров пространства
-        self.relief = relief
+        self.relief = relief                            # Необходим для копирования
         self.gridSize = len(relief), len(relief[0])
         self.width, self.height, self.length = size
         # Перевод Длин в единицы СИ
